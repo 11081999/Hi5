@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>High Five</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/AssetsStyles.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+        <header class="header_top">
+
+          <div class="logo-box">
+            <a href="index.html">
+              <img class="logo" src="images/Logo.png" alt="" width="200">
+            </a>
+          </div>
+
+          <div id="header-wrapper">
+
+            <div class="slider">
+              <img src="images/MarvelAssets/1 Front.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/2 Register.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/3 Log In.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/4 New Device.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/4.1 Pair Device.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/4.2 Set Device.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/4.3 Pattern.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/4.4 Done Settings.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/5 Menu.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/6 Profile.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/7 Devices.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/7.1 Devices.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/7.2 Devices.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/7.3 Devices.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/7.4 Settings.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/7.5 Functions.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/8 Linked Accounts.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/8 New Account.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/9 Support.jpg" alt="" width="400px">
+              <img src="images/MarvelAssets/10 Password Recovery.jpg" alt="" width="400px">
+          </div>
+
+      </div>
+    </header>
+
+    <script src="js/jquery.min.js"></script>
+
+      <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+      <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+      <script>
+
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+
+        $("#menuButton").on("click", function(){
+          $(".menu-center-block nav").toggle("slow");
+        });
+
+      //  $(".menu-center-block nav").localScroll();
+    </script>
+
+  </body>
+</html>

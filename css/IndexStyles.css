@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	line-height: 1;
+  background-color: white;
+	margin: auto;
+}
+
+/************************************************/
+/*                                              */
+/*                 HEADER                       */
+/*                                              */
+/************************************************/
+.header_top{
+	background-image: url('../images/Background-1.jpg');
+	height: 100vh;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* background-position:center; */
+	position: relative;
+	overflow: auto;
+}
+
+
+
+header #header-wrapper{
+	max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+	.logo-box{
+		width: 100%;
+	}
+
+	.logo{
+		display: block;
+		margin: 20px;
+		left: 20px;
+		width: 170px;
+		height: 64px;
+	}
+
+	.HamMenu{
+		display: none;
+	}
+
+	.HamMenu ul li{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.HamMenu ul{
+		padding: 0 20px;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 2px;
+		line-height: 50px;
+	}
+
+	.Knocki{
+		position: relative;
+		width: 500px;
+		text-align: center;
+		top: 25px;;
+		left: 10vh;
+
+	}
+
+	.menu-elements{
+		display: none;
+	}
+
+	.Knocki p{
+		color: white;
+	}
+
+		header ul li {
+			display: inline-block;
+
+		}
+
+		header ul li input {
+
+			background-color: rgba(0, 0, 0, 0);
+			color: white;
+			border: none;
+			font-size: 30px;
+			font-family: "Lato";
+			font-weight: 400;
+			line-height: 55px;
+
+		}
+
+		.Buy{
+			width: 225px;
+	    height: 60px;
+	    margin: auto;
+			background-color: #032e73;
+			border-radius: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.L{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.L ul{
+			background-color: #0698c1;
+			width: auto;
+			margin: auto;
+			line-height: auto;
+			height: 25px;
+			width: 130px;
+			margin-top: 60px;
+			margin-right: 10px;
+			border-radius: 20px;
+			padding: 0px;
+		}
+
+		.L ul li input{
+			background-color: rgba(0, 0, 0, 0);
+			color: white;
+			border: none;
+			font-size: 16px;
+			font-family: "Lato";
+			font-weight: 400;
+			line-height: 20px;
+		}
+
+		h6{
+			text-align: center;
+			font-family: "Lato";
+			font-size: 60px;
+			font-weight: 300;
+			color: grey;
+		}
+
+	/*-----Responsive-----*/
+@media screen and (max-width: 700px) {
+	header #header-wrapper{
+		width: 90%;
+  }
+
+	.Knocki{
+		left: auto;
+		width: 100%;
+	}
+
+	.HamMenu{
+		display: block;
+		width: 100%;
+		background-color: #B8B8B8;
+		min-height: 40px;
+		overflow-y: auto;
+	}
+
+	.HamMenu img{
+		display: block;
+		margin: auto;
+		height: 95%;
+	}
+
+	h6{
+		font-size: 40px;
+	}
+
+	.L{
+		display: block;
+	}
+
+	.L ul{
+	 margin-left: auto;
+	 margin-right: auto;
+	 margin-top: 5px;
+	}
+
+	.L ul li input{
+	}
+
+	.logo{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 170px;
+		height: 64px;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	.header_top{
+		height: auto;
+		overflow: auto;
+	}
+
+	.Knocki{
+		margin-top: 40px;
+		top: auto;
+		left: auto;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+
+}
+
+
+/************************************************/
+/*                                              */
+/*            What´s up with Knocki?            */
+/*                                              */
+/************************************************/
+.WhatsUpText{
+	width: 500px;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 90%;
+}
+
+		.WhatsUpText p{
+			color: grey;
+		}
+
+h4{
+	text-align: center;
+	font-family: "Lato";
+	font-size: 22px;
+	font-weight: 400;
+	color: black;
+}
+
+.IconosN{
+	width: 100%;
+}
+
+.IconosR{
+	display: none;
+}
+
+.Apps{
+	display: flex;
+	justify-content: center;
+	width: 100%
+}
+
+.App{
+	width: 50%;
+	height: 50%
+}
+
+.bx-wrapper{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.someFunctions{
+	margin: 35px 0 35px 0;
+}
+
+/*-----Responsive-----*/
+@media screen and (max-width: 700px) {
+
+	.IconosN{
+		display: none;
+	}
+
+	.IconosR{
+		display: block;
+		width: 100%;
+
+	}
+
+	.bx-wrapper{
+		width: 95%;
+	}
+
+	.Apps{
+		flex-direction: column;
+	}
+
+	.App{
+		margin: 0 auto;
+		width: 100%;
+
+	}
+
+}
+/************************************************/
+/*                                              */
+/*                   Functions                  */
+/*                                              */
+/************************************************/
+#Functions-wrapper{
+	background-image: url('../images/Background-Madera.jpg');
+	height: 100vh;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	background-position: left;
+}
+
+	.Functions{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+/*-----Responsive-----*/
+@media screen and (max-width: 700px) {
+
+	.Functions{
+		width: 100%;
+	}
+
+}
+/************************************************/
+/*                                              */
+/*                  Our Team                    */
+/*                                              */
+/************************************************/
+#main-wrapper{
+	background-image: url('../images/Background-2.jpg');
+	height: auto;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	background-position: left;
+	position: relative;
+}
+
+.OurTeam{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 90%;
+}
+
+ .Photo{
+		height: 250px;
+		width: 250px;
+		border-radius: 100px;
+	}
+
+.Bio{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+	margin: 0 auto;
+}
+
+	.Bio p{
+		text-align: center;
+		width: 250px;
+		text-align: center;
+		font-family: 'Lato';
+		font-size: 15px;
+		font-weight: 300;
+		color: grey;
+	}
+
+	.Person{
+		float: left;
+		margin: 100px 50px 100px 50px;
+	}
+
+	h3{
+		text-align: center;
+		font-family: 'Lato';
+		font-size: 25px;
+		font-weight: 300;
+		color: grey;
+	}
+
+	h1{
+		text-align: center;
+		font-family: 'Lato';
+		font-size: 15px;
+		font-weight: 400;
+		color: grey;
+	}
+
+	/*-----Responsive-----*/
+	@media screen and (max-width: 700px) {
+
+	.Person{
+		margin: 25px 25px 25px 25px;
+	}
+
+}
+
+/************************************************/
+/*                                              */
+/*                  Footer                      */
+/*                                              */
+/************************************************/
+
+footer{
+	background-color: #010220;
+	overflow: auto;
+}
+
+#footer-wrapper{
+	height: auto;
+	width: 100%;
+}
+
+	.FollowUs{
+		float: left;
+		font-family: 'Lato';
+		font-size: 25px;
+		font-weight: 300;
+		color: white;
+		margin-top: 40px;
+		margin-left: 20px;
+	}
+
+	.FollowUsImg{
+		margin-top: 10px;
+		float: left;
+	}
+
+	.Subscribe{
+		float: right;
+		font-family: 'Lato';
+		font-size: 15px;
+		font-weight: 400;
+		color: white;
+		width: 600px;
+		margin-top: 40px;
+		margin-right: 20px;
+	}
+
+	.Subscribe input {
+		background-color: #1e2639;
+		color: white;
+		border: none;
+		font-size: 16px;
+		font-family: "Lato";
+		font-weight: 400;
+		line-height: 20px;
+		border-radius: 20px;
+		width: 200px;
+		margin-left: 20px;
+		float: left;
+	}
+
+/*-----Responsive-----*/
+@media screen and (max-width: 700px) {
+
+	.Functions{
+		width: 100%;
+	}
+	.Subscribe, .Subscribe input{
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+
+}
